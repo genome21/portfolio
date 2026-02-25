@@ -195,6 +195,49 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 .pub-id-link{display:inline-flex;align-items:center;gap:8px;font-family:var(--mn);font-size:11px;letter-spacing:1px;color:var(--ac);text-decoration:none;padding:8px 16px;border:1px solid var(--bda);background:var(--card);transition:all .3s}
 .pub-id-link:hover{background:var(--tag-bg-h);color:var(--t1)}
 .pub-id-link svg{width:14px;height:14px;fill:currentColor}
+/* Cross-Domain Foundation styles */
+.cdf-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cdf-card{background:var(--card);border:1px solid var(--bd);padding:40px;position:relative;transition:all .4s;overflow:hidden}
+.cdf-card::before{content:'';position:absolute;left:0;top:0;width:3px;height:100%;background:var(--ac);opacity:0;transition:opacity .4s}
+.cdf-card:hover{border-color:var(--bda);transform:translateY(-2px)}
+.cdf-card:hover::before{opacity:1}
+.cdf-era{font-family:var(--mn);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--acd);margin-bottom:8px}
+.cdf-domain{font-family:var(--mn);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ac);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.cdf-domain::before{content:'';display:block;width:6px;height:6px;background:var(--ac);opacity:.6}
+.cdf-card h3{font-family:var(--sf);font-size:20px;font-weight:400;margin-bottom:14px;line-height:1.3}
+.cdf-card p{font-size:14px;line-height:1.8;color:var(--t2)}
+.cdf-arrow{display:flex;align-items:center;gap:12px;margin-top:18px;padding-top:16px;border-top:1px solid var(--bd)}
+.cdf-arrow-label{font-family:var(--mn);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ac);white-space:nowrap}
+.cdf-arrow-val{font-size:13px;color:var(--t2);line-height:1.6}
+.cdf-card-wide{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;background:var(--card);border:1px solid var(--bd);padding:40px;position:relative;transition:all .4s;overflow:hidden}
+.cdf-card-wide::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--ac),transparent);opacity:0;transition:opacity .4s}
+.cdf-card-wide:hover{border-color:var(--bda)}
+.cdf-card-wide:hover::before{opacity:1}
+.cdf-card-wide .cdf-story{display:flex;flex-direction:column;gap:16px}
+.cdf-card-wide .cdf-story p{font-size:14.5px;line-height:1.85;color:var(--t2)}
+.cdf-sidebar{display:flex;flex-direction:column;gap:16px}
+.cdf-stat{display:flex;flex-direction:column;gap:4px;padding:16px 20px;border-left:2px solid var(--bd);transition:all .3s}
+.cdf-stat:hover{border-left-color:var(--ac);padding-left:24px}
+.cdf-stat-label{font-family:var(--mn);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--acd)}
+.cdf-stat-val{font-size:14px;color:var(--t1);line-height:1.5}
+.cdf-podcast{background:var(--bg2);border:1px solid var(--bd);padding:40px;position:relative;overflow:hidden;margin-top:24px}
+.cdf-podcast::before{content:'';position:absolute;top:-1px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--acd),transparent)}
+.cdf-podcast-meta{display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.cdf-podcast-badge{font-family:var(--mn);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ac);background:var(--badge-bg);border:1px solid var(--badge-bd);padding:4px 12px}
+.cdf-podcast-show{font-family:var(--mn);font-size:11px;letter-spacing:1px;color:var(--t3)}
+.cdf-podcast h3{font-family:var(--sf);font-size:20px;font-weight:400;margin-bottom:16px;line-height:1.35}
+.cdf-podcast p{font-size:14.5px;line-height:1.85;color:var(--t2);margin-bottom:16px}
+.cdf-podcast p:last-of-type{margin-bottom:0}
+.cdf-podcast-link{display:inline-flex;align-items:center;gap:8px;font-family:var(--mn);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--ac);text-decoration:none;padding:8px 16px;border:1px solid var(--bda);background:transparent;transition:all .3s;margin-top:20px}
+.cdf-podcast-link:hover{background:var(--tag-bg-h);color:var(--t1)}
+.cdf-podcast-link svg{width:14px;height:14px;fill:currentColor}
+.cdf-edu{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+.cdf-edu-item{padding:20px;border:1px solid var(--bd);background:var(--card);text-align:center;transition:all .3s}
+.cdf-edu-item:hover{border-color:var(--bda);transform:translateY(-2px)}
+.cdf-edu-inst{font-family:var(--mn);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--ac);margin-bottom:8px;line-height:1.4}
+.cdf-edu-prog{font-size:12px;color:var(--t2);line-height:1.5}
+@media(max-width:900px){.cdf-grid{grid-template-columns:1fr}.cdf-card-wide{grid-template-columns:1fr}.cdf-edu{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cdf-edu{grid-template-columns:1fr}}
 @keyframes fsu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fi{from{opacity:0}to{opacity:1}}
 @keyframes sp{0%,100%{opacity:.3;transform:scaleY(1)}50%{opacity:.8;transform:scaleY(1.2)}}
@@ -223,6 +266,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 <div class="nlogo">ROBERT<span>::</span>WILKINS III</div>
 <ul class="nlnk">
 <li><a href="#credentials">Authority</a></li>
+<li><a href="#origins">Origins</a></li>
 <li><a href="#strengths">Strengths</a></li>
 <li><a href="#work">Work</a></li>
 <li><a href="#projects">Projects</a></li>
@@ -240,6 +284,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 <div class="mob-menu" id="mobMenu">
 <a href="#credentials" onclick="closeMenu()">Authority</a>
 <a href="#approach" onclick="closeMenu()">Approach</a>
+<a href="#origins" onclick="closeMenu()">Origins</a>
 <a href="#strengths" onclick="closeMenu()">Strengths</a>
 <a href="#topologies" onclick="closeMenu()">Topologies</a>
 <a href="#work" onclick="closeMenu()">Work</a>
@@ -257,12 +302,12 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 </div>
 
 <section class="hero"><div class="ct"><div class="hero-c">
-<div class="hero-eb">Robert Wilkins III &middot; Cloud Architect &middot; Technical Strategist &middot; AI Researcher</div>
+<div class="hero-eb">Robert Wilkins III &middot; Cloud Architect &middot; Systems Strategist &middot; AI Researcher &middot; Published Author</div>
 <h1 class="hero-t">Designing systems<br>that endure <em>constraint</em></h1>
 <div class="hero-ln"></div>
 <p class="hero-d">I build things that need to work at scale, under pressure, inside organizations where the rules are real and the consequences are measured in millions. My career has been shaped by environments where you don't get to assume ideal conditions — you design for the constraints that actually exist.</p>
 <div class="hero-m">
-<div class="hmi"><span class="hml">Experience</span><span class="hmv">13+ Years in IT</span></div>
+<div class="hmi"><span class="hml">Experience</span><span class="hmv">20+ Years in IT</span></div>
 <div class="hmi"><span class="hml">Current</span><span class="hmv">Big Four &middot; 6.5+ Years</span></div>
 <div class="hmi"><span class="hml">Domain</span><span class="hmv">Regulated Cloud Systems</span></div>
 <div class="hmi"><span class="hml">Method</span><span class="hmv">Structural Design</span></div>
@@ -294,8 +339,103 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 </div></div></section>
 
 <div class="ct"><div class="dv"></div></div>
+<section id="origins"><div class="ct">
+<div class="sh rv"><span class="sn">03</span><h2 class="st">Cross-Domain Foundation</h2><p class="ss">The systems thinking didn't start with cloud. It was forged across finance, agriculture, athletics, compliance, and entrepreneurship &mdash; each domain sharpening a different edge of the same blade.</p></div>
+
+<div class="cdf-grid">
+
+<div class="cdf-card rv">
+<div class="cdf-era">2005 &ndash; 2009</div>
+<div class="cdf-domain">Financial Systems &amp; Process Engineering</div>
+<h3>Noble Energy &mdash; Where Automation Instinct Began</h3>
+<p>As an operational accounting clerk, I inherited a purchase card auditing process that consumed two weeks every month. I redesigned it from scratch using early software engineering principles, compressing it to 2&ndash;3 days. This was my first experience eliminating an entire category of operational friction through structural redesign &mdash; years before I ever touched a cloud console.</p>
+<div class="cdf-arrow"><span class="cdf-arrow-label">Maps to &rarr;</span><span class="cdf-arrow-val">Entropy reduction, automation-first philosophy, eliminating recurring problem classes</span></div>
+</div>
+
+<div class="cdf-card rv">
+<div class="cdf-era">2009 &ndash; 2010</div>
+<div class="cdf-domain">Investment Management &amp; Risk Architecture</div>
+<h3>TTrade Capital &mdash; Managing $2M Under Real Exposure</h3>
+<p>As President, I led the transformation of an investment club into a registered section 3(c)(1) hedge fund with $2M in assets under management. This meant modeling risk under genuine financial exposure, managing regulatory compliance, and navigating the fund's eventual acquisition by Capital Advantage Investors. Every decision had material consequences with no rollback button.</p>
+<div class="cdf-arrow"><span class="cdf-arrow-label">Maps to &rarr;</span><span class="cdf-arrow-val">Constraint-aware design, cascading failure sensitivity, portfolio-level risk thinking</span></div>
+</div>
+
+<div class="cdf-card rv">
+<div class="cdf-era">2009 &ndash; 2016</div>
+<div class="cdf-domain">Regulated Operations &amp; Governance at Scale</div>
+<h3>Chickasaw Nation &mdash; From Help Desk to Enterprise POS Authority</h3>
+<p>I started as a soft count clerk at WinStar Casino, earned my first IT role on the help desk at $28K/year, moved to desktop support, and was recruited onto the 4-person team that solely managed point-of-sale systems across the entire Chickasaw Nation &mdash; including the world's largest casino. I authored IT policies that achieved first-ever 100% PCI compliance and managed 500+ POS endpoints across casinos and travel stops.</p>
+<div class="cdf-arrow"><span class="cdf-arrow-label">Maps to &rarr;</span><span class="cdf-arrow-val">Governance at scale, compliance architecture, operating in regulated high-stakes environments</span></div>
+</div>
+
+<div class="cdf-card rv">
+<div class="cdf-era">2015 &ndash; 2019</div>
+<div class="cdf-domain">Agricultural Systems &amp; Living Constraints</div>
+<h3>Two Leos Farm &mdash; 20 Acres of Uncontrolled Variables</h3>
+<p>I sold most of my possessions and bought 20 acres with a 336-square-foot micro cabin after PCI compliance stress led to health issues. Managing horses, dogs, goats, pigs, and livestock operations taught me that real systems have no SLA &mdash; they're unpredictable, require constant adaptation, and punish rigidity. You design for the conditions that actually exist, not the ones you planned for.</p>
+<div class="cdf-arrow"><span class="cdf-arrow-label">Maps to &rarr;</span><span class="cdf-arrow-val">&ldquo;Design for the constraints that actually exist&rdquo; &mdash; resilience engineering, adaptive systems</span></div>
+</div>
+
+<div class="cdf-card rv">
+<div class="cdf-era">1999 &ndash; 2008</div>
+<div class="cdf-domain">Competitive Athletics &amp; Peak Execution</div>
+<h3>USATF &amp; Gatorade &mdash; Performance Under Constraint</h3>
+<p>As a USATF Junior Olympics athlete, coach, and Gatorade-sponsored professional, I spent nearly a decade training my body and mind for high-stakes execution in compressed timeframes. The discipline of peak athletic performance &mdash; deep preparation followed by explosive output where fractions of a second matter &mdash; is the same pattern that defines my technical working style today.</p>
+<div class="cdf-arrow"><span class="cdf-arrow-label">Maps to &rarr;</span><span class="cdf-arrow-val">Deep preparation, rapid synthesis, high-intensity execution cycles under pressure</span></div>
+</div>
+
+<div class="cdf-card rv">
+<div class="cdf-era">2013 &ndash; 2024</div>
+<div class="cdf-domain">Entrepreneurship &amp; Community Building</div>
+<h3>AppHappening, ScribblePost, OpenStack &mdash; Building From Zero</h3>
+<p>Across multiple ventures and community roles, I helped build companies, shape open-source platforms, and advise product strategy from the ground up. AppHappening (Sydney), ScribblePost, and the OpenStack Foundation each demanded translating vision into execution with limited resources, ambiguous requirements, and no institutional safety net &mdash; the same muscles required when building enterprise infrastructure from inception.</p>
+<div class="cdf-arrow"><span class="cdf-arrow-label">Maps to &rarr;</span><span class="cdf-arrow-val">Zero-to-one building, resource-constrained execution, cross-functional strategic alignment</span></div>
+</div>
+
+</div>
+
+<div class="cdf-card-wide rv" style="margin-top:24px">
+<div class="cdf-story">
+<div class="cdf-domain">The Chickasaw Nation Progression</div>
+<p>The career trajectory through the Chickasaw Nation represents a pattern that would repeat throughout my career: entering at ground level, rapidly demonstrating value, and being pulled upward by people who recognized what I could see that others couldn't.</p>
+<p>In less than 7 years, I went from counting cash on the casino floor to being one of four people trusted with the POS infrastructure across an entire tribal nation &mdash; and authoring the compliance policies that governed it.</p>
+</div>
+<div class="cdf-sidebar">
+<div class="cdf-stat"><span class="cdf-stat-label">Entry Point</span><span class="cdf-stat-val">Soft Count Clerk, WinStar Casino</span></div>
+<div class="cdf-stat"><span class="cdf-stat-label">First IT Role</span><span class="cdf-stat-val">Help Desk Technician &middot; ~$28K/yr</span></div>
+<div class="cdf-stat"><span class="cdf-stat-label">Promotion</span><span class="cdf-stat-val">Desktop Support &middot; ~$43K/yr</span></div>
+<div class="cdf-stat"><span class="cdf-stat-label">Recruited</span><span class="cdf-stat-val">Business Analysis &middot; 4-person team managing all POS</span></div>
+<div class="cdf-stat"><span class="cdf-stat-label">Outcome</span><span class="cdf-stat-val">First-ever 100% PCI compliance &middot; 500+ endpoints</span></div>
+</div>
+</div>
+
+<div class="cdf-podcast rv">
+<div class="cdf-podcast-meta">
+<span class="cdf-podcast-badge">Podcast &middot; Episode 14</span>
+<span class="cdf-podcast-show">Unplugged Sunday &middot; Hello Tech Pros</span>
+</div>
+<h3>&ldquo;20 Acres, 9 Dogs, 2 Horses, and a 336 sq ft Micro Cabin&rdquo;</h3>
+<p>In this interview &mdash; recorded while hitting golf balls with a 7-iron across 5 of my 20 acres, with wild turkeys, horses, dogs, quail, and our pig audible in the background &mdash; I talked about the decision to radically simplify after PCI compliance stress led to health issues. The episode captured a snapshot of what it looks like when a cloud architect for the world's biggest casino steps away from the screens and designs a different kind of system entirely.</p>
+<p>The conversation explored how my wife's suggestion to sell most of our possessions and move to acreage became one of the most consequential architectural decisions of my life &mdash; not for infrastructure, but for resilience.</p>
+<a href="https://podcasts.apple.com/us/podcast/20-acres-9-dogs-2-horses-and-a-336-sq-ft-micro/id1117533989?i=1000369376995" target="_blank" class="cdf-podcast-link"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>Apple Podcasts &middot; Archived Episode</a>
+</div>
+
+<div class="rv" style="margin-top:48px">
+<div class="sbt">Continued Development</div>
+<p style="font-size:14.5px;line-height:1.85;color:var(--t2);margin-bottom:24px">Formal study complements experiential learning. These programs reflect a deliberate investment in understanding leadership, well-being, innovation, and machine intelligence at an institutional level.</p>
+<div class="cdf-edu">
+<div class="cdf-edu-item rv"><div class="cdf-edu-inst">Harvard Kennedy School</div><div class="cdf-edu-prog">Machine Learning for Leaders</div></div>
+<div class="cdf-edu-item rv"><div class="cdf-edu-inst">Yale University</div><div class="cdf-edu-prog">The Science of Well-Being</div></div>
+<div class="cdf-edu-item rv"><div class="cdf-edu-inst">Babson College</div><div class="cdf-edu-prog">Rise to Leadership: Become a CEO</div></div>
+<div class="cdf-edu-item rv"><div class="cdf-edu-inst">Georgia Institute of Technology</div><div class="cdf-edu-prog">Innovation Leadership</div></div>
+</div>
+</div>
+
+</div></section>
+
+<div class="ct"><div class="dv"></div></div>
 <section id="strengths"><div class="ct">
-<div class="sh rv"><span class="sn">03</span><h2 class="st">Core Strengths</h2><p class="ss">Capabilities refined through deep engagement with complex, high-constraint environments.</p></div>
+<div class="sh rv"><span class="sn">04</span><h2 class="st">Core Strengths</h2><p class="ss">Capabilities refined through deep engagement with complex, high-constraint environments.</p></div>
 <div class="stl">
 <div class="sti rv"><div class="stlb">Systems &amp; Constraint Awareness</div><div class="stds">I operate with a strong sensitivity to hidden constraints that shape enterprise technology environments — governance structures, security controls, compliance requirements, and legacy system limitations. I design solutions that function effectively within these realities rather than assuming idealized conditions.</div></div>
 <div class="sti rv"><div class="stlb">Architectural Thinking</div><div class="stds">My focus extends beyond components and services to the relationships between them. I emphasize long-term stability, scalability, and maintainability, ensuring that systems remain operable as tools, platforms, and organizational priorities evolve.</div></div>
@@ -306,7 +446,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 
 <div class="ct"><div class="dv"></div></div>
 <section id="topologies"><div class="ct">
-<div class="sh rv"><span class="sn">04</span><h2 class="st">Problem Topologies</h2><p class="ss">Environments and constraint profiles where my approach produces the highest structural impact.</p></div>
+<div class="sh rv"><span class="sn">05</span><h2 class="st">Problem Topologies</h2><p class="ss">Environments and constraint profiles where my approach produces the highest structural impact.</p></div>
 <div class="tg rv">
 <div class="ti"><div class="tn">01</div><div class="tl">High-Constraint Enterprise Cloud</div></div>
 <div class="ti"><div class="tn">02</div><div class="tl">Regulated &amp; Security-Sensitive Environments</div></div>
@@ -320,7 +460,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 
 <div class="ct"><div class="dv"></div></div>
 <section id="work"><div class="ct">
-<div class="sh rv"><span class="sn">05</span><h2 class="st">Representative Work</h2><p class="ss">Patterns of contribution across cloud architecture, platform stabilization, and AI-oriented systems design.</p></div>
+<div class="sh rv"><span class="sn">06</span><h2 class="st">Representative Work</h2><p class="ss">Patterns of contribution across cloud architecture, platform stabilization, and AI-oriented systems design.</p></div>
 <div class="wg">
 <div class="wc rv">
 <div class="wch">Cloud Architecture &amp; Platform</div>
@@ -353,7 +493,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 
 <div class="ct"><div class="dv"></div></div>
 <section id="projects"><div class="ct">
-<div class="sh rv"><span class="sn">06</span><h2 class="st">Open Source Projects</h2><p class="ss">Frameworks, automation layers, and tooling — published on GitHub as reusable systems for cloud architecture, governance, and AI orchestration.</p></div>
+<div class="sh rv"><span class="sn">07</span><h2 class="st">Open Source Projects</h2><p class="ss">Frameworks, automation layers, and tooling — published on GitHub as reusable systems for cloud architecture, governance, and AI orchestration.</p></div>
 <div class="pg">
 <a href="https://github.com/genome21/AegisFlow" target="_blank" class="pc pc-feat rv">
 <div>
@@ -423,7 +563,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 
 <div class="ct"><div class="dv"></div></div>
 <section id="innovation"><div class="ct">
-<div class="sh rv"><span class="sn">07</span><h2 class="st">Thought Leadership<br>&amp; Innovation</h2></div>
+<div class="sh rv"><span class="sn">08</span><h2 class="st">Thought Leadership<br>&amp; Innovation</h2></div>
 <div class="ic">
 <div class="it rv">
 <p>I maintain a strong orientation toward emerging technologies, architectural patterns, and paradigm shifts, with a particular focus on artificial intelligence, autonomous systems, and agent-based execution models.</p>
@@ -437,7 +577,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 
 <div class="ct"><div class="dv"></div></div>
 <section id="frameworks"><div class="ct">
-<div class="sh rv"><span class="sn">08</span><h2 class="st">Research &amp; Conceptual Frameworks</h2><p class="ss">Original frameworks grounded in published research, exploring how cognitive dynamics, organizational behavior, and systemic patterns shape technology environments.</p></div>
+<div class="sh rv"><span class="sn">09</span><h2 class="st">Research &amp; Conceptual Frameworks</h2><p class="ss">Original frameworks grounded in published research, exploring how cognitive dynamics, organizational behavior, and systemic patterns shape technology environments.</p></div>
 <div class="fg">
 <div class="fi rv">
 <div class="fh"><span class="fb">Pattern</span><h3 class="fn">Wilkins Bias</h3></div>
@@ -497,7 +637,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 
 <div class="ct"><div class="dv"></div></div>
 <section id="dynamics"><div class="ct">
-<div class="sh rv"><span class="sn">09</span><h2 class="st">Working Dynamics</h2></div>
+<div class="sh rv"><span class="sn">10</span><h2 class="st">Working Dynamics</h2></div>
 <div class="dw rv">
 <div class="dq">Deep exploration, rapid synthesis, and high-intensity execution cycles — sharpened under real enterprise pressure.</div>
 <div class="db"><p>My working style is characterized by extensive conceptual modeling and multi-dimensional analysis prior to construction, followed by concentrated build phases that produce substantial output in compressed timeframes.</p>
@@ -510,7 +650,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 
 <div class="ct"><div class="dv"></div></div>
 <section id="value"><div class="ct">
-<div class="sh rv"><span class="sn">10</span><h2 class="st">Strategic Value</h2><p class="ss">I specialize in environments where technical correctness alone is insufficient — where governance, security, and institutional constraints define the true architecture.</p></div>
+<div class="sh rv"><span class="sn">11</span><h2 class="st">Strategic Value</h2><p class="ss">I specialize in environments where technical correctness alone is insufficient — where governance, security, and institutional constraints define the true architecture.</p></div>
 <div class="vg rv">
 <div class="vi"><div class="vic">I</div><div class="vil">Reduced Systemic<br>Friction</div></div>
 <div class="vi"><div class="vic">II</div><div class="vil">Stabilized<br>Platforms</div></div>
@@ -522,7 +662,7 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 
 <div class="ct"><div class="dv"></div></div>
 <section id="philosophy"><div class="ct">
-<div class="sh rv"><span class="sn">11</span><h2 class="st">Philosophy</h2></div>
+<div class="sh rv"><span class="sn">12</span><h2 class="st">Philosophy</h2></div>
 <div class="pl rv">
 <div class="pi">I prioritize architectures that remain operable under constraint, drift, and organizational complexity.</div>
 <div class="pi">My work centers on reducing systemic friction while preserving governance, reliability, and control.</div>
