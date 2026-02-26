@@ -232,10 +232,22 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 .cdf-podcast-link:hover{background:var(--tag-bg-h);color:var(--t1)}
 .cdf-podcast-link svg{width:14px;height:14px;fill:currentColor}
 .cdf-edu{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
-.cdf-edu-item{padding:20px;border:1px solid var(--bd);background:var(--card);text-align:center;transition:all .3s}
-.cdf-edu-item:hover{border-color:var(--bda);transform:translateY(-2px)}
-.cdf-edu-inst{font-family:var(--mn);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--ac);margin-bottom:8px;line-height:1.4}
-.cdf-edu-prog{font-size:12px;color:var(--t2);line-height:1.5}
+.cdf-edu-item{padding:28px 20px;border:1px solid var(--bd);background:var(--card);text-align:center;transition:all .4s;position:relative;overflow:hidden}
+.cdf-edu-item::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:0;height:2px;background:var(--ac);transition:width .4s}
+.cdf-edu-item:hover{border-color:var(--bda);transform:translateY(-3px)}
+.cdf-edu-item:hover::after{width:100%}
+.cdf-edu-shield{width:48px;height:48px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;opacity:.7;transition:opacity .3s}
+.cdf-edu-item:hover .cdf-edu-shield{opacity:1}
+.cdf-edu-shield svg{width:100%;height:100%;fill:var(--ac)}
+.cdf-edu-shield img{width:100%;height:100%;object-fit:contain}
+.cdf-edu-inst{font-family:var(--sf);font-size:15px;font-weight:400;color:var(--t1);margin-bottom:8px;line-height:1.3}
+.cdf-edu-prog{font-family:var(--mn);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--t3);line-height:1.5}
+.gcp-collab{display:flex;align-items:center;gap:20px;margin-top:32px;padding:28px 32px;background:var(--bg2);border:1px solid var(--bd);position:relative;overflow:hidden}
+.gcp-collab::before{content:'';position:absolute;left:0;top:0;width:3px;height:100%;background:var(--ac)}
+.gcp-collab-logo{flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.gcp-collab-logo svg{width:100%;height:100%}
+.gcp-collab-text{font-family:var(--mn);font-size:11px;letter-spacing:.5px;color:var(--t2);line-height:1.7}
+.gcp-collab-text strong{color:var(--ac);font-weight:500;letter-spacing:1px;text-transform:uppercase;font-size:10px}
 @media(max-width:900px){.cdf-grid{grid-template-columns:1fr}.cdf-card-wide{grid-template-columns:1fr}.cdf-edu{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.cdf-edu{grid-template-columns:1fr}}
 @keyframes fsu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
@@ -329,7 +341,12 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 <div class="sgi rv"><div class="sgm"></div><div class="sgt">Recognized by Google Cloud as a GCP expert and invited to the inaugural Gemini Code Assist Technical Advisory Council (June 2024) — a select group of practitioners brought together at Google Cloud Space NYC to shape product capabilities and roadmap direction alongside Google Cloud leadership.</div></div>
 <div class="sgi rv"><div class="sgm"></div><div class="sgt">Played a pivotal role in the adoption of Google's AI solutions at the firm — from Bard through Duet AI to Gemini Code Assist — working directly with senior compliance and legal leadership to evaluate security concerns, educate decision-makers on AI capabilities, and demo solutions that led to approval in both a US and global context.</div></div>
 <div class="sgi rv"><div class="sgm"></div><div class="sgt">Regularly operate as a peer-level collaborator with Google Cloud Principal Engineers and Architects — co-developing enterprise implementations where Google's standard reference architectures require significant modification to function within real-world governance, security, and compliance constraints. Contributions have directly shaped official Google Cloud documentation, including early Anthos enterprise deployment patterns.</div></div>
-</div></div></section>
+</div>
+<div class="gcp-collab rv">
+<div class="gcp-collab-logo"><img src="assets/logos/google-cloud.svg" alt="Google Cloud" style="width:100%;height:100%" /></div>
+<div class="gcp-collab-text"><strong>Google Cloud Partnership</strong><br>Recognized as a GCP expert by Google Cloud. Invited to the Gemini Code Assist Technical Advisory Council. Co-developed enterprise Anthos deployment patterns. Led global adoption of Gemini AI solutions. Peer-level collaboration with Google Cloud Principal Engineers and Architects across GCVE, Gemini, and platform architecture.</div>
+</div>
+</div></section>
 
 <div class="ct"><div class="dv"></div></div>
 <section id="approach"><div class="ct">
@@ -429,10 +446,10 @@ footer{padding:80px 0;border-top:1px solid var(--bd)}
 <div class="sbt">Continued Development</div>
 <p style="font-size:14.5px;line-height:1.85;color:var(--t2);margin-bottom:24px">Formal study complements experiential learning. These programs reflect a deliberate investment in understanding leadership, well-being, innovation, and machine intelligence at an institutional level.</p>
 <div class="cdf-edu">
-<div class="cdf-edu-item rv"><div class="cdf-edu-inst">Harvard Kennedy School</div><div class="cdf-edu-prog">Machine Learning for Leaders</div></div>
-<div class="cdf-edu-item rv"><div class="cdf-edu-inst">Yale University</div><div class="cdf-edu-prog">The Science of Well-Being</div></div>
-<div class="cdf-edu-item rv"><div class="cdf-edu-inst">Babson College</div><div class="cdf-edu-prog">Rise to Leadership: Become a CEO</div></div>
-<div class="cdf-edu-item rv"><div class="cdf-edu-inst">Georgia Institute of Technology</div><div class="cdf-edu-prog">Innovation Leadership</div></div>
+<div class="cdf-edu-item rv"><div class="cdf-edu-shield"><img src="assets/logos/harvard.svg" alt="Harvard Kennedy School" /></div><div class="cdf-edu-inst">Harvard Kennedy School</div><div class="cdf-edu-prog">Machine Learning for Leaders</div></div>
+<div class="cdf-edu-item rv"><div class="cdf-edu-shield"><img src="assets/logos/yale.svg" alt="Yale University" /></div><div class="cdf-edu-inst">Yale University</div><div class="cdf-edu-prog">The Science of Well-Being</div></div>
+<div class="cdf-edu-item rv"><div class="cdf-edu-shield"><img src="assets/logos/babson.svg" alt="Babson College" /></div><div class="cdf-edu-inst">Babson College</div><div class="cdf-edu-prog">Rise to Leadership: Become a CEO</div></div>
+<div class="cdf-edu-item rv"><div class="cdf-edu-shield"><img src="assets/logos/gatech.svg" alt="Georgia Institute of Technology" /></div><div class="cdf-edu-inst">Georgia Tech</div><div class="cdf-edu-prog">Innovation Leadership</div></div>
 </div>
 </div>
 

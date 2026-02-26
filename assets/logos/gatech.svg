@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 100">
+  <!-- Georgia Tech - Shield with tower/tech motif -->
+  <defs>
+    <linearGradient id="gg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c4a76c" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#8a7648" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield -->
+  <path d="M40 4L6 18v30c0 24 14.5 38 34 44 19.5-6 34-20 34-44V18L40 4z" fill="none" stroke="url(#gg)" stroke-width="2.5"/>
+  <path d="M40 10L12 22v26c0 20.5 12 32.5 28 38 16-5.5 28-17.5 28-38V22L40 10z" fill="none" stroke="#c4a76c" stroke-width="1" opacity=".3"/>
+  <!-- Tech Tower silhouette -->
+  <rect x="35" y="24" width="10" height="36" fill="none" stroke="#c4a76c" stroke-width="1.2" opacity=".6"/>
+  <!-- Tower windows -->
+  <rect x="37.5" y="28" width="5" height="4" fill="#c4a76c" opacity=".2"/>
+  <rect x="37.5" y="35" width="5" height="4" fill="#c4a76c" opacity=".2"/>
+  <rect x="37.5" y="42" width="5" height="4" fill="#c4a76c" opacity=".2"/>
+  <rect x="37.5" y="49" width="5" height="4" fill="#c4a76c" opacity=".2"/>
+  <!-- Tower top/spire -->
+  <path d="M33 24 L40 16 L47 24" fill="none" stroke="#c4a76c" stroke-width="1.2" opacity=".6"/>
+  <line x1="40" y1="16" x2="40" y2="12" stroke="#c4a76c" stroke-width="1" opacity=".5"/>
+  <!-- Tower base -->
+  <line x1="30" y1="60" x2="50" y2="60" stroke="#c4a76c" stroke-width="1.2" opacity=".6"/>
+  <!-- Gear/cog arcs around tower (engineering motif) -->
+  <path d="M26 36 A18 18 0 0 0 26 50" fill="none" stroke="#c4a76c" stroke-width=".8" opacity=".3"/>
+  <path d="M54 36 A18 18 0 0 1 54 50" fill="none" stroke="#c4a76c" stroke-width=".8" opacity=".3"/>
+  <!-- Text -->
+  <text x="40" y="72" text-anchor="middle" font-family="'DM Serif Display',Georgia,serif" font-size="6" fill="#c4a76c" letter-spacing="1.5" opacity=".8">GA TECH</text>
+</svg>
