@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 100">
+  <defs>
+    <linearGradient id="hbsg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c4a76c" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#8a7648" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <path d="M40 4L6 18v30c0 24 14.5 38 34 44 19.5-6 34-20 34-44V18L40 4z" fill="none" stroke="url(#hbsg)" stroke-width="2.5"/>
+  <path d="M40 10L12 22v26c0 20.5 12 32.5 28 38 16-5.5 28-17.5 28-38V22L40 10z" fill="none" stroke="#c4a76c" stroke-width="1" opacity=".3"/>
+  <text x="40" y="38" text-anchor="middle" font-family="'DM Serif Display',Georgia,serif" font-size="14" fill="#c4a76c" font-weight="bold">HBS</text>
+  <text x="40" y="56" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="5" fill="#c4a76c" letter-spacing="1" opacity=".7">ONLINE</text>
+</svg>
