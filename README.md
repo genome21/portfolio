@@ -8,7 +8,7 @@ A single-page portfolio showcasing systems architecture expertise, published res
 
 ## Live Site
 
-**[https://genome21.github.io](https://genome21.github.io)**
+**[https://genome21.github.io/portfolio](https://genome21.github.io/portfolio)**
 
 ## Built With
 
